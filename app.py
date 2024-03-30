@@ -12,7 +12,7 @@ JOBS = [
   {
     'id':2,
     'title':'Frontend tech',
-    'location':'Bengaluru, India',
+    'location':'Bengaluru, Nigeria',
     'salary':'Rs. 10,00,000'
   },
   {
