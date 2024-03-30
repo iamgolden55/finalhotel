@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>World Hotels</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+        <ul>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+    
+      <h1 class="tex-center">Hotels {{company_name}} You</h1>
+      <blockquote>
+      <p class="text-lowercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+        </blockquote>
+      <img scr= "static/banner.jpg" alt="hotelaroundyou">
+      <h3 class="text-center"">Open position</h3>
+      
+      <div>
+        {% for job in jobs %}
+            <!-- codes can be runned externally from another page -->
+         {% include 'jobitems.html' %}
+        {% endfor %}
+      </div>
+    
+      
+    
+
+  </div>
+</body>
+
+</html>
