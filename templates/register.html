@@ -38,16 +38,15 @@
       </tr>
     </thead>
     <tbody>
-      {% for client in client %}
+      {% for clients in clients %}
       <tr>
-        <td scope="row">{{ client[0] }}</th>
-        <td>{{ client[1]}}</td> <!-- Assuming your client data has a first_name field -->
-        <td>{{ client[2]}}</td> <!-- Assuming your client data has a last_name field -->
-        <td>{{ client[3] }}</td> 
-        <td>{{ client[4] }}</td> <!-- Assuming your client data has a first_name field -->
-        <td>{{ client[5] }}</td> <!-- Assuming your client data has a last_name field -->
-        <td>{{ client[6] }}</td>
-       
+        <td scope="row">{{ clients[0] }}</th>
+        <td>{{ clients[1]}}</td> <!-- Assuming your client data has a first_name field -->
+        <td>{{ clients[2]}}</td> <!-- Assuming your client data has a last_name field -->
+        <td>{{ clients[3] }}</td> 
+        <td>{{ clients[4] }}</td> <!-- Assuming your client data has a first_name field -->
+        <td>{{ clients[5] }}</td> <!-- Assuming your client data has a last_name field -->
+        <td>{{ clients[6] }}</td>
       </tr>
       {% endfor %}
     </tbody>

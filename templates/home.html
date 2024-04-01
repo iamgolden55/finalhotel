@@ -3,6 +3,13 @@
   {% include 'nav.html' %}
   <div class="container">
     <h1 class="tex-center">Hotels {{company_name}} You</h1>
+    <div>
+      {% for user in user %}
+
+      {% include 'users.html' %}
+      {% endfor %}
+    </div>
+
       <blockquote>
       <p class="text-lowercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
         </blockquote>

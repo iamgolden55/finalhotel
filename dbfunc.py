@@ -11,7 +11,8 @@ def fetch_data(query):
         cursor = conn.cursor()
         cursor.execute(query)
         rows = cursor.fetchall()
-        return rows
+        for row in rows:
+            print(row)
     except mysql.connector.Error as e:
         print("Error fetching data:", e)
         return None
